@@ -1,0 +1,92 @@
+/**
+    Author:                 Mike Pandel - mpandel@zulily.com
+    Creation Date:          7/10/2017
+    File Name:              defaultStyle.css
+    Purpose:                This is the default style sheet for ZuCrew Associate web-viewer
+**/
+body{
+    background-color: aliceblue;
+    
+    height: 800;
+    width: 100%;
+    
+    margin: 0;
+    padding: 0;
+    position: fixed;
+}
+
+#Header{
+    background-color: 575f78;
+    
+    width: 100%;
+    height: 150px;
+}
+
+#Header img{
+    margin-top: 30px;
+    margin-left: 15px;
+}
+
+#asociateList{
+    background-color: 565555;
+    width: 250px;
+    height: 100%;  
+    position: absolute;
+    
+    
+    overflow:scroll;
+    overflow-x:hidden;
+}
+
+#associate{
+    background-color:d8e0e3;
+    height: 60px;
+    width: 100%;
+    margin-top: -15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#associateListImage{
+    margin-top: 2px;
+    margin-left:10px;
+    width: 50px;
+    border-top-left-radius: 50% 50%;
+    border-top-right-radius: 50% 50%;
+    border-bottom-right-radius: 50% 50%;
+    border-bottom-left-radius: 50% 50%;
+}
+
+#associate:hover{
+    background-color: bac889;
+}
+
+#list{
+    margin-top:-20px;
+    width:100%;
+    height:100%;
+}
+
+#searchNameID{
+    width: 100%;
+    height: 25px
+}
+
+#coreContent{
+    width: 700px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+#associateImage{
+    background-color:coral;
+    float:left;
+    margin-top: 30px;
+}
+
+#associateInfo{
+    float:right;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+

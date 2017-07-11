@@ -1,0 +1,107 @@
+<!--
+    Author:                 Mike Pandel - mpandel@zulily.com
+    Creation Date:          7/10/2017
+    File Name:              index.html
+    Purpose:                This webpage will take the ZuCrew Associate database and link it to this webpage, creating a web viewer
+-->
+<htm>
+    <head>
+        <!-- Style Sheets -->
+        <link rel="Stylesheet" type="text/css" href="defaultStyle.css">
+        
+        <!-- JavaScript -->
+        <script type="text/javascript" src="associateList.js"></script>
+    </head>
+    
+    <body>
+        <!-- Basic Web Header -->
+        <div id="Header">
+            <img src="Images/zulilyLogo.png">
+        </div>
+        
+        <!--    
+            Name:           associateList
+            Purpose:        Place holder for list of associate provided from ZuCrew Associate DB
+        -->
+        <div id="asociateList">
+            <!-- Place holder for associate search box. This will search the associate list to narrow down search options. -->
+            <div id="associateSearch">
+                <form action="#PHP">
+                    <input id="searchNameID" type="text" placeholder="Search...">
+                </form>
+            </div>
+            <!-- User list goes here -->
+            <div id="associate">
+                <table>
+                    <tr id="tableText">
+                        <td><img id="associateListImage" src="Images/A_Default.jpg"></td>
+                        <td>Michael Pandel |</td>
+                        <td><b>FH</b></td>
+                    </tr>
+                </table>
+            </div>
+            <!-- 
+                JavaScript
+            --> 
+            <script>
+                /** 
+                    This for loop populates user list
+                **/
+                function myFunction(){
+                    alert("I am an alert box!");
+                }
+                
+                for (i = 0; i < 200; i++) {                
+                  document.write('<br><div id="associate" onclick="myFunction()");"><table><tr id="tableText"><td><img id="associateListImage" src="Images/A_Default.jpg"></td><td>Michael Pandel |</td><td><b>FH</b></td></tr></table></div>')  
+                }
+                
+                
+            </script>
+                
+            
+        </div>
+        
+        <!--
+            Name:           coreContent
+            Purpose:        Place holder for all associate information, linked via ZuCrew Associate DB
+        -->
+        <div id="coreContent">
+            <!-- Place holder for associate head-shot -->
+            <div id="associateImage">
+                <img src="Images/A_Default.jpg">
+            </div>
+            
+            <!-- Place holder for user information (Name,Shift, Tenure, etc...) -->
+            <div id="associateInfo">
+                <form id="associateForm" action="#PHP">
+                    <table style="width='1002px'">
+                        <tr>
+                            <td>Name:</td>
+                            <td><input id="formName" type="text"></td>
+                        </tr>
+                        <tr>
+                            <td>Start Date:</td>
+                            <td><input id="formSDate" type="text"></td>
+                        </tr>
+                        <tr>
+                            <td>Tenure:</td>
+                            <td><input id="formTenure" type="text"></td>
+                        </tr>
+                        <tr>
+                            <td>Manager:</td>
+                            <td><input id="formManager" type="text"></td>
+                        </tr>
+                        <tr>
+                            <td>Department:</td>
+                            <td><input id="formDepartment" type="text"></td>
+                        </tr>
+                        <tr>
+                            <td>Shift:</td>
+                            <td><input id="formShift" type="text"></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>  
+    </body>
+</htm>
